@@ -7,9 +7,12 @@
     "chalk": "4.1.2",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.4",
-    "hardhat": "^2.9.3"
-  },
-  "dependencies": {
+    "hardhat": "^2.9.3",
     "zokrates-js": "^1.0.41"
+  },
+  "scripts": {
+    "deploy" : "npx hardhat run scripts/deploy.js",
+    "generate" : "npx hardhat run scripts/generate-proof.js",
+    "test": "npx hardhat test"
   }
 }
